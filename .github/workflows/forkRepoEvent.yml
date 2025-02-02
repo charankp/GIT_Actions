@@ -1,0 +1,9 @@
+name: Fork Repository Event
+on:
+  fork:
+    types: [created]
+jobs:
+  fork:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Fork Repo Event"
