@@ -1,0 +1,7 @@
+name: Pull Request Repository event
+on: pull_request
+jobs:
+  pr:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "PR Repo Event"
