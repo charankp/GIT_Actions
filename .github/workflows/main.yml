@@ -1,0 +1,13 @@
+name: Events 
+on: 
+  pull_request:
+    types:
+      - opened
+      - syncronized
+    branches:
+      - main
+jobs:
+  events:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "PR Created"
