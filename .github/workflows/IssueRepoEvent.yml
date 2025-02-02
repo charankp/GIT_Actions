@@ -1,0 +1,10 @@
+name: Issue Repository Event
+on: issues
+jobs:
+  issue_repo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Issue Repository event"
+  
+  
+  
