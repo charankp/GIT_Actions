@@ -1,0 +1,11 @@
+name: Pull Request Repository Event
+on: 
+  pull_request_review:
+    types: [submitted, edited, dismissed]
+jobs:
+  pr_review:
+    if: github.event.review.state == "approved"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "PR Approved"
+    
