@@ -1,0 +1,9 @@
+name: Repository PR Review
+on:
+  pull_request_review:
+    types: [submitted]
+jobs:
+  pr_review:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "PR Review Repository Event"
