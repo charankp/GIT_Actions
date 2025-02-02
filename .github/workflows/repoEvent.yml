@@ -1,0 +1,7 @@
+name: Push Repository Event
+on: push
+jobs:
+  push-event:
+    runs-on: ubuntu_latest
+    steps:
+      - run: echo "Push repo event"
